@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus reservation system</title>
     <script src="https://kit.fontawesome.com/8bdb8e0b5b.js" crossorigin="anonymous"></script>
+    <style src="style.css"></style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body style="background-image: url('Img/ao.png')">
@@ -14,13 +15,13 @@
     <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header bg-dark text-light">
             <h5 class="modal-title">Modify name</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body bg-dark text-light">
             <form>
             <div class="form-group">
                 <label for="num_seat_modal" class="col-form-label">Seat number</label>
@@ -32,7 +33,7 @@
             </div>
             </form>
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer bg-dark text-light">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary" onclick="edit()">Modify data</button>
         </div>
