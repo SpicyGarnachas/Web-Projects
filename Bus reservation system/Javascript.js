@@ -69,7 +69,7 @@ function del() {
   } else {
     var answer = window.confirm('Are you sure?');
     if (answer) {
-      localStorage.setItem('seat_ '+ (numberSeat - 1), 'Avaible');
+      localStorage.setItem('seat_'+ (numberSeat - 1), 'Avaible');
       resetinput();
       update();
     }
