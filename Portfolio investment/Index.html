@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio investment</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="icon" href="wallet.svg" />
+</head>
+
+<body class="bg-light text-dark">
+    <nav class="navbar">
+        <button type="button" onclick="print()" class="btn btn-outline my-2"><span
+                class="material-icons md-dark">download</span></i></button>
+    </nav>
+    <div class="d-flex justify-content-center">
+        <h4 class="p-1 d-inline" id="portfolioName">Portfolio name</h4>
+        <button type="button" onclick="portfolioName ()" class="btn d-inline"><span
+                class="material-icons md-dark">edit</span></i></button>
+    </div>
+    <div>
+        <h4 class="text-center p-1" id="totalValue">$ 0</h4>
+    </div>
+    <div class="row m-5">
+        <div class="col-md-4">
+            <form action="" id="form-invest">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-block collapsed text-center shadow-none" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Add Investment
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="form-group p-2 d-flex justify-content-center">
+                                    <input type="text" id="investName" class="form-control"
+                                        placeholder="Investment name">
+                                </div>
+                                <div class="form-group p-2 d-flex justify-content-center">
+                                    <input type="number" id="investValue" class="form-control"
+                                        placeholder="Investment value" value="1" min="1">
+                                </div>
+                                <div class="form-group p-1">
+                                    <input type="submit" class="btn btn-success btn-block" name="save" value="save">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table class="table text-center">
+                    <thead>
+                        <th>Investment name</th>
+                        <th>Investment value</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="table">
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div class="col-md-8">
+            <div>
+                <canvas id="chart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="Javascript.js"></script>
+</body>
+
+</html>
