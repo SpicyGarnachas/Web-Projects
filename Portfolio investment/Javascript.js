@@ -104,9 +104,9 @@ class UI {
 
     totalValue() {
         if (JSON.parse(localStorage.getItem('investValues')).length !== 0) {
-            document.getElementById("totalValue").innerHTML = '$ ' + JSON.parse(localStorage.getItem('investValues')).reduce((a, b) => a + b);
+            document.getElementById('totalValue').innerHTML = '$ ' + JSON.parse(localStorage.getItem('investValues')).reduce((a, b) => a + b);
         } else {
-            document.getElementById("totalValue").innerHTML = '$ 0';
+            document.getElementById('totalValue').innerHTML = '$ 0';
         }
     }
 
