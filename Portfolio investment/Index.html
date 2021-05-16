@@ -13,19 +13,20 @@
 
 <body class="bg-light text-dark">
     <nav class="navbar">
-        <button type="button" onclick="print()" class="btn btn-outline my-2"><span
-                class="material-icons md-dark">download</span></i></button>
+        <button type="button" onclick="print()" class="btn btn-outline my-2">
+            <span class="material-icons md-dark">download</span></i>
+        </button>
     </nav>
     <div class="d-flex justify-content-center">
-        <h4 class="p-1 d-inline" id="portfolioName">Portfolio name</h4>
+        <h4 class="p-1 d-inline" id="portfolioName"></h4>
         <button type="button" onclick="portfolioName ()" class="btn d-inline"><span
                 class="material-icons md-dark">edit</span></i></button>
     </div>
     <div>
         <h4 class="text-center p-1" id="totalValue">$ 0</h4>
     </div>
-    <div class="row">
-        <div class="col-md-4 p-2">
+    <div class="row mw-100">
+        <div class="col-md-4 d-flex justify-content-center">
             <form action="" id="form-invest" >
                 <div class="accordion" id="accordionExample">
                     <div class="card">
@@ -41,11 +42,11 @@
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                <div class="form-group p-2">
+                                <div class="form-group p-1">
                                     <input type="text" id="investName" class="form-control"
                                         placeholder="Investment name">
                                 </div>
-                                <div class="form-group p-2 ">
+                                <div class="form-group p-1 ">
                                     <input type="number" id="investValue" class="form-control"
                                         placeholder="Investment value" value="1" min="1">
                                 </div>
@@ -67,9 +68,9 @@
                 </table>
             </form>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 justify-content-center">
             <div>
-                <canvas id="chart"></canvas>
+                <canvas id="chart" ></canvas>
             </div>
         </div>
     </div>
