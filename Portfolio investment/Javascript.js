@@ -81,7 +81,17 @@ class UI {
                 backgroundColor: '#000',
                 color: '#000',
                 borderColor: '#000',
-                plugins: {}
+                plugins: {
+                    legend: {
+                        labels: {
+                            // This more specific font property overrides the global property
+                            font: {
+                                size: 15,
+                                family: 'Roboto, sans-serif',
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -94,9 +104,9 @@ class UI {
 
     totalValue() {
         if (JSON.parse(localStorage.getItem('investValues')).length !== 0) {
-            document.getElementById('totalValue').innerHTML = '$ ' + JSON.parse(localStorage.getItem('investValues')).reduce((a, b) => a + b);
+            document.getElementById("totalValue").innerHTML = '$ ' + JSON.parse(localStorage.getItem('investValues')).reduce((a, b) => a + b);
         } else {
-            document.getElementById('totalValue').innerHTML = '$ 0';
+            document.getElementById("totalValue").innerHTML = '$ 0';
         }
     }
 
