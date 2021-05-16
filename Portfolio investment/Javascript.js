@@ -48,12 +48,12 @@ class Storage {
 class Table {
     update(investNames, investValues) {
         var node = document.getElementById('table');
-        node.innerHTML = "";
+        node.innerHTML = '';
         for (var i = 0; i < investValues.length; i++) {
             document.getElementById("table").innerHTML += `
             <tr id="element${i}">
-                <td>${investValues[i]}</td>
                 <td >${investNames[i]}</td>
+                <td>${investValues[i]}</td>
                 <td >
                     <button type="button" class="btn" onclick="del('${i}')"><span class="material-icons md-light">delete</span></button>
                 </td>
@@ -146,4 +146,6 @@ document.getElementById('form-invest').addEventListener('submit', function (e) {
     ui.update(chart);
     table.update(storage.name, storage.value);
     ui.totalValue();
+    document.getElementById('investValue').value = 1;
+    document.getElementById('investName').value = '';
 });
