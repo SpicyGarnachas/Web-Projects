@@ -1,5 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:,wght@1,500&display=swap');
+.material-icons.md-dark {
+    color: #000;
+}
 
-.material-icons.md-dark { color: #000; }
+::-webkit-scrollbar {
+    width: 10px;
+}
 
-.font { font-family: 'Roboto', sans-serif; }
+::-webkit-scrollbar-track {
+    background: #fff;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #252525;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1c1c1c;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+}

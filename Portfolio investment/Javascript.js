@@ -1,5 +1,5 @@
 class Storage {
-    constructor(value, name, ) {
+    constructor(value, name) {
         this.value = value;
         this.name = name;
     }
@@ -114,6 +114,16 @@ class UI {
         document.getElementById("portfolioName").innerHTML = JSON.parse(localStorage.getItem("portfolioName"))
 
     }
+}
+
+function mouseOver() {
+    document.getElementById("001").setAttribute("style", "fill: rgb(38.819885%,0%,0%);");
+    document.getElementById("002").setAttribute("style", "fill: rgb(38.819885%,0%,0%);");
+}
+
+function mouseOut() {
+    document.getElementById("001").setAttribute("style", "fill: black;");
+    document.getElementById("002").setAttribute("style", "fill: black;");
 }
 
 const storage = new Storage();
